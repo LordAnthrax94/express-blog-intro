@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const myPost = require('./post');
+
+app.use(express.static('images'));
 
 app.get('/', (res, req)=>{
-  res.send('Server del mio Blog')
+  res.json(myPost)
 })
 
 app.listen(port, ()=>{
