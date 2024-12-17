@@ -2,7 +2,7 @@ const myPost = [
   {
   titolo: "Ciambellone",
   contenuto: "Un delizioso ciambellone",
-  immagine: "images/ciambellone.jpeg",
+  immagine: "http://localhost:3000/images/ciambellone.jpeg",
   tags:["bello","vivace","assurdo","buonissimo"]
 },
 {

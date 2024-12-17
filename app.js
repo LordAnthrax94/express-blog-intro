@@ -5,8 +5,8 @@ const myPost = require('./bacheca');
 
 app.use(express.static('Public'));
 
-app.get('/bacheca', (res, req)=>{
-  res.json(myPost)
+app.get('/bacheca', (req, res)=>{  
+  res.json(myPost);
 })
 
 app.listen(port, ()=>{
