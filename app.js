@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const myPost = require('./post');
 
-app.use(express.static('images'));
+app.use(express.static('Public'));
 
 app.get('/', (res, req)=>{
   res.json(myPost)
