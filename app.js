@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const myPost = require('./bacheca');
 
-app.use(express.static('Public'));
+app.use(express.static('public'));
 
 app.get('/bacheca', (req, res)=>{  
   res.json({
